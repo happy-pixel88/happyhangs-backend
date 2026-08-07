@@ -1,0 +1,17 @@
+packages:
+  - "apps/*"
+  - "!apps/backend/.medusa/**"
+
+overrides:
+  emittery: "0.10.0"
+
+allowBuilds:
+  '@medusajs/telemetry': false
+  '@swc/core': false
+  esbuild: false
+  msgpackr-extract: false
+  protobufjs: false
+  sharp: false
+
+minimumReleaseAgeExclude:
+  - '@posthog/core@1.46.8'
