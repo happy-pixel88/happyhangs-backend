@@ -2,6 +2,7 @@ packages:
   - "apps/*"
   - "!apps/backend/.medusa/**"
 nodeLinker: hoisted
+minimumReleaseAge: 0
 overrides:
   emittery: "0.10.0"
 allowBuilds:
@@ -12,5 +13,4 @@ allowBuilds:
   protobufjs: false
   sharp: false
 minimumReleaseAgeExclude:
-  - '@posthog/core@1.46.8'
   - '@posthog/core@1.46.8'
