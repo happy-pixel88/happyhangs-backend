@@ -1,10 +1,9 @@
 packages:
   - "apps/*"
   - "!apps/backend/.medusa/**"
-
+nodeLinker: hoisted
 overrides:
   emittery: "0.10.0"
-
 allowBuilds:
   '@medusajs/telemetry': false
   '@swc/core': false
@@ -12,6 +11,6 @@ allowBuilds:
   msgpackr-extract: false
   protobufjs: false
   sharp: false
-
 minimumReleaseAgeExclude:
+  - '@posthog/core@1.46.8'
   - '@posthog/core@1.46.8'
